@@ -27,10 +27,77 @@ font-weight: bold;
 animation-iteration-count: initial;
 }
 
+h4{
+font-size: 18px;
+font-weight: 500;
+font-family: 'Roboto', sans-serif;
+font-weight: bold;
+}
+
+h5{
+    font-size: 17px;
+}
+
+.medioPago{
+padding: 40px;
+text-align: center;
+font-size: 30px;
+font-weight: 500;
+font-family: 'Roboto', sans-serif;
+font-weight: bold;
+}
+
+/* Medios de pago hecho con grid*/
+
+.tarjetaEfectivo{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "pago1"
+                         "pago2";
+    gap: 7px;
+}
+
+@media screen and (min-width:720px){
+    .tarjetaEfectivo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1fr);
+        grid-template-areas: "pago1 pago2";
+        gap: 10px;
+                            
+    }
+}
+
+@media screen and (min-width:1350px){
+    .tarjetaEfectivo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1fr);
+        grid-template-areas: "pago1 pago2"
+        
+    }
+}
+
+.tarjeta{
+    grid-area: pago1;
+    width: 50%;
+    margin-left: 100px;
+}
+
+.efectivo{
+   grid-area: pago2;
+   width: 50%;
+   margin-left: 100px;
+}
+
+/* parrafo hecho con flex en pagina principal*/
 
 section{
     display: flex;
-    padding: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 30px;
 }
 
 .parrafo1{
@@ -48,7 +115,6 @@ footer{
     background-color: black;
     color: white;
     padding-bottom: 1rem;
-    
 }
 
 footer h3{
@@ -69,6 +135,7 @@ nav{
 nav ul{
     display: flex;
     justify-content: space-evenly;
+    margin-left: 15px;
     gap: 1rem;
     background-color: black;
 }
@@ -77,7 +144,6 @@ nav ul{
 
 nav ul li{
 list-style-type: none;
-margin: 0,5rem;
 font-size: 19px;
 font-weight: 500;
 font-family: 'Roboto', sans-serif;
@@ -156,7 +222,7 @@ font-weight: bold;
 /*pagina principal*/
 
 .galeriaPrincipal{
-    padding: 50px;
+    padding: 30px;
     display: grid;
     grid-template-columns: repeat(1fr);
     grid-template-rows: repeat(4,1fr);
@@ -177,6 +243,7 @@ font-weight: bold;
 grid-area: imageen2;
 width: 100%;
 }
+
 
 
 .ropa3{
