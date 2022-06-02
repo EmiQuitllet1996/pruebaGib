@@ -1,0 +1,271 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: gray; }
+
+header {
+  background-color: black;
+  padding: 20px;
+  border: 5px solid white; }
+  header .pdePraga {
+    text-align: center;
+    background-color: black;
+    border: 2px solid white;
+    width: 50px;
+    height: 50px; }
+  header h1 {
+    text-align: center;
+    color: white;
+    padding: 30px;
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    animation-iteration-count: initial; }
+  header nav {
+    padding: 0,5rem; }
+    header nav ul {
+      display: flex;
+      justify-content: space-evenly;
+      margin-left: 15px;
+      margin-right: 15px;
+      gap: 1rem;
+      background-color: black; }
+      header nav ul li {
+        list-style-type: none;
+        font-size: 19px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold; }
+
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold; }
+
+h5 {
+  font-size: 17px; }
+
+.medioPago {
+  padding: 40px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold; }
+
+/* Medios de pago hecho con grid*/
+.tarjetaEfectivo {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "pago1" "pago2";
+  gap: 7px; }
+
+@media screen and (min-width: 720px) {
+  .tarjetaEfectivo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1fr);
+    grid-template-areas: "pago1 pago2";
+    gap: 10px; } }
+
+@media screen and (min-width: 1350px) {
+  .tarjetaEfectivo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1fr);
+    grid-template-areas: "pago1 pago2"; } }
+
+.tarjeta {
+  grid-area: pago1;
+  width: 30%;
+  margin-left: 170px; }
+
+.efectivo {
+  grid-area: pago2;
+  width: 30%;
+  margin-left: 170px; }
+
+/* parrafo hecho con flex en pagina principal*/
+section {
+  display: flex;
+  padding-bottom: 3rem;
+  padding-left: 30px; }
+
+.parrafo1 {
+  flex: 50%;
+  margin-right: 15px; }
+
+.parrafo2 {
+  flex: 50%;
+  margin-right: 5px; }
+
+/*Footer*/
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding-bottom: 1rem; }
+  footer h3 {
+    padding: 1rem; }
+
+/* Menu de navegacion*/
+nav ul li:hover {
+  font-size: 23px;
+  font-weight: bold;
+  color: white; }
+
+.subMenu {
+  background-color: black;
+  padding: 10px; }
+
+nav ul ul {
+  display: none;
+  position: absolute; }
+
+nav ul li:hover > ul {
+  display: block; }
+
+nav ul li a {
+  text-decoration: none;
+  color: white; }
+
+/* Main*/
+main h2 {
+  margin: 2rem;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-weight: bold; }
+
+/*pagina principal*/
+.galeriaPrincipal {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "imageen1" "imageen2" "imageen3" "imageen4";
+  gap: 7px; }
+
+.ropa1 {
+  grid-area: imageen1;
+  width: 100%; }
+
+.ropa2 {
+  grid-area: imageen2;
+  width: 100%; }
+
+.ropa3 {
+  grid-area: imageen3;
+  width: 100%; }
+
+.ropa4 {
+  grid-area: imageen4;
+  width: 100%;
+  margin-right: 50px; }
+
+@media screen and (min-width: 720px) {
+  .galeriaPrincipal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "imageen1 imageen2" "imageen3 imageen4";
+    gap: 10px; } }
+
+@media screen and (min-width: 1350px) {
+  .galeriaPrincipal {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1fr);
+    grid-template-areas: "imageen1 imageen2 imageen3 imageen4"; } }
+
+/* Pagina de nosotros y pagina contacto*/
+p {
+  text-align: center; }
+
+/* Pagina de productos*/
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: "imagen1" "imagen2" "imagen3" "imagen4" "imagen5" "imagen6";
+  gap: 7px; }
+
+.item1 {
+  grid-area: imagen1;
+  width: 100%;
+  border: 10px solid black;
+  transition: 2s; }
+
+.item1:hover {
+  transform: scale(1.1); }
+
+.item2 {
+  grid-area: imagen2;
+  width: 100%;
+  border: 10px solid black;
+  transition: 2s; }
+
+.item2:hover {
+  transform: scale(1.1); }
+
+.item3 {
+  grid-area: imagen3;
+  width: 100%;
+  border: 10px solid black;
+  transition: 2s; }
+
+.item3:hover {
+  transform: scale(1.1); }
+
+.item4 {
+  grid-area: imagen4;
+  width: 100%;
+  border: 10px solid black;
+  transition: 2s; }
+
+.item4:hover {
+  transform: scale(1.1); }
+
+.item5 {
+  grid-area: imagen5;
+  width: 100%;
+  border: 10px solid black;
+  transition: 2s; }
+
+.item5:hover {
+  transform: scale(1.1); }
+
+.item6 {
+  width: 100%;
+  grid-area: imagen6;
+  border: 10px solid black;
+  transition: 2s; }
+
+.item6:hover {
+  transform: scale(1.1); }
+
+@media screen and (min-width: 720px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "imagen1 imagen2" "imagen3 imagen4" "imagen5 imagen6";
+    gap: 10px; } }
+
+@media screen and (min-width: 1350px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "imagen1 imagen2 imagen3" "imagen4 imagen5 imagen6";
+    gap: 10px; } }
