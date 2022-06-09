@@ -220,35 +220,35 @@ main{
                     transition: 2s;
             }
 
-            .item1:hover{
+                .item1:hover{
                 transform: scale(1.1);
             }
             
             
-            .item2{
+                .item2{
                 grid-area: imagen2;
                 width: $medida-principal;
                 border: $medida-secundaria solid $color-secundario;
                 transition: 2s;
             }
 
-            .item2:hover{
+                .item2:hover{
                 transform: scale(1.1);
             }
             
-            .item3{
+                .item3{
                 grid-area: imagen3;
                 width: $medida-principal;
                 border: $medida-secundaria solid $color-secundario;
                 transition: 2s;
             }
 
-            .item3:hover{
+                .item3:hover{
                 transform: scale(1.1);
             }
             
             
-            .item4{
+                .item4{
                 grid-area: imagen4;
                 width: $medida-principal;
                 border: $medida-secundaria solid $color-secundario;
@@ -256,20 +256,19 @@ main{
             
             }
 
-            .item4:hover{
+                .item4:hover{
                 transform: scale(1.1);
             }
             
             
-            .item5{
+                .item5{
                 grid-area: imagen5;
                 width: $medida-principal;
                 border: $medida-secundaria solid $color-secundario;
                 transition: 2s;
+             }
 
-            }
-
-            .item5:hover{
+                .item5:hover{
                 transform: scale(1.1);
             }
             
@@ -288,6 +287,8 @@ main{
             
                 
             }
+
+            /* Medias queries*/
 
             @media screen and (min-width:720px){
                 .galeria{
@@ -358,11 +359,6 @@ main{
             }
 
 }
-
-
-/* Medios de pago hecho con grid*/
-
-/* parrafo hecho con flex en pagina principal*/
 
 /*Footer*/
 
